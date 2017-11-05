@@ -3,11 +3,11 @@ check.dependsOn 'assembleDebugAndroidTest'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    buildToolsVersion "26.0.2"
 
     defaultConfig {
         applicationId "com.google.firebase.quickstart.database"
-        minSdkVersion 14
+        minSdkVersion 17
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -37,7 +37,7 @@ dependencies {
 
     compile 'com.google.firebase:firebase-auth:11.4.2'
     compile 'com.google.firebase:firebase-database:11.4.2'
-
+    compile 'com.google.android.gms:play-services-auth:11.4.2'
     testCompile 'junit:junit:4.12'
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
     androidTestCompile 'com.android.support.test:runner:0.5'

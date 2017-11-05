@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/button_register" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/users_messages_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/button_Register"
+        android:clipToPadding="false"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/item_register_user" />
+
+</RelativeLayout>

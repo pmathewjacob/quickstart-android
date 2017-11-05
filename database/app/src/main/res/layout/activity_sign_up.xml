@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:src="@drawable/firebase_lockup_400" />
+
+    <LinearLayout
+        android:id="@+id/layout_signup_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/icon"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewphoneNumber"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center"
+                android:text="phoneNumber: "
+                android:visibility="visible"
+                tools:text="phoneNumber: " />
+
+            <EditText
+                android:id="@+id/field_phoneNumber"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:hint="@string/phone_title_text"
+                android:inputType="number"
+                android:maxLines="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewFullName"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center"
+                android:text="Full Name: "
+                android:visibility="visible"
+                tools:text="Full Name: " />
+
+            <EditText
+                android:id="@+id/field_fName"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewParish"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Parish: "
+                android:visibility="visible"
+                tools:text="Parish: " />
+
+            <EditText
+                android:id="@+id/field_Parish"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="Parish"
+                android:inputType="text"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewAge"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Age: "
+                android:visibility="visible"
+                tools:text="Age: " />
+
+            <EditText
+                android:id="@+id/field_Age"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical|center_horizontal"
+                android:hint="Age"
+                android:inputType="number"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_signup_items"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/button_sign_up"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

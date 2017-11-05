@@ -15,14 +15,17 @@
             android:label="@string/app_name"
             android:theme="@style/AppTheme" />
         <activity android:name=".NewPostActivity" />
-        <activity android:name=".SignInActivity">
+        <activity android:name=".SignUpActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".PostDetailActivity" />
+        <activity android:name=".PhoneAuthActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PostDetailActivity"></activity>
+        <activity android:name=".RegisterUserDetailActivity"
+            android:label="User Details"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>
